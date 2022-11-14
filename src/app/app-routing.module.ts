@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Error404Component } from './errors/error404/error404.component';
+import { AuthGuard } from './guards/auth.guard';
 import { InicioComponent } from './inicio/inicio.component';
 import { LayoutComponent } from './layout/layout.component';
 
@@ -11,7 +12,8 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: InicioComponent
+        component: InicioComponent,
+        // canActivate: [AuthGuard]
       },
       {
         path: 'auth',
@@ -21,7 +23,8 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'no-encontrado-404',
