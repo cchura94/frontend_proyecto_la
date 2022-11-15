@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AuthService } from './services/auth.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from '../interceptor/auth.interceptor';
+import { UsuarioService } from './services/usuario.service';
 
 
 
@@ -17,7 +18,8 @@ import { AuthInterceptor } from '../interceptor/auth.interceptor';
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
-    }
+    },
+    UsuarioService
   ]
 })
 export class CoreModule { }
