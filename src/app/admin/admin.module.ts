@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 
 import {TableModule} from 'primeng/table';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {TableModule} from 'primeng/table';
     AdminRoutingModule,
     CoreModule,
     HttpClientModule,
+    ReactiveFormsModule,
     
     TableModule
   ]

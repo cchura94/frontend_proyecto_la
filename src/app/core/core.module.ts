@@ -4,6 +4,7 @@ import { AuthService } from './services/auth.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from '../interceptor/auth.interceptor';
 import { UsuarioService } from './services/usuario.service';
+import { CategoriaService } from './services/categoria.service';
 
 
 
@@ -19,7 +20,8 @@ import { UsuarioService } from './services/usuario.service';
       useClass: AuthInterceptor,
       multi: true
     },
-    UsuarioService
+    UsuarioService,
+    CategoriaService
   ]
 })
 export class CoreModule { }

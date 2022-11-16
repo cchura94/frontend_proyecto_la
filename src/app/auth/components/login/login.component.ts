@@ -15,6 +15,10 @@ export class LoginComponent implements OnInit {
     password: new FormControl('', Validators.required),
   })
 
+  valCheck: string[] = ['remember'];
+
+    password!: string;
+
   constructor(private authService: AuthService, private router:Router) { }
 
   ngOnInit(): void {
