@@ -9,7 +9,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 
 import {TableModule} from 'primeng/table';
+import {ButtonModule} from 'primeng/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import {DialogModule} from 'primeng/dialog';
+import {InputTextModule} from 'primeng/inputtext';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {ToastModule} from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule,
     
-    TableModule
+    TableModule,
+    ButtonModule,
+    DialogModule,
+    InputTextModule,
+    InputTextareaModule,
+    ConfirmDialogModule,
+    ToastModule 
+    
   ]
 })
 export class AdminModule { }
