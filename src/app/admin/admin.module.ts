@@ -10,18 +10,24 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 
 import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DialogModule} from 'primeng/dialog';
 import {InputTextModule} from 'primeng/inputtext';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import {ToastModule} from 'primeng/toast';
+import { ProductoComponent } from './components/producto/producto.component';
+import {ToolbarModule} from 'primeng/toolbar';
+import {FileUploadModule} from 'primeng/fileupload';
+import {RadioButtonModule} from 'primeng/radiobutton';
+import {InputNumberModule} from 'primeng/inputnumber';
 
 @NgModule({
   declarations: [
     PerfilComponent,
     CategoriaComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    ProductoComponent
   ],
   imports: [
     CommonModule,
@@ -29,6 +35,7 @@ import {ToastModule} from 'primeng/toast';
     CoreModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     
     TableModule,
     ButtonModule,
@@ -36,7 +43,11 @@ import {ToastModule} from 'primeng/toast';
     InputTextModule,
     InputTextareaModule,
     ConfirmDialogModule,
-    ToastModule 
+    ToastModule,
+    ToolbarModule,
+    FileUploadModule,
+    RadioButtonModule,
+    InputNumberModule
     
   ]
 })
