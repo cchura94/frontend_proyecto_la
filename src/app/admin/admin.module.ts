@@ -21,13 +21,17 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {FileUploadModule} from 'primeng/fileupload';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {InputNumberModule} from 'primeng/inputnumber';
+import { NuevoPedidoComponent } from './components/pedido/nuevo-pedido/nuevo-pedido.component';
+import { ListaPedidoComponent } from './components/pedido/lista-pedido/lista-pedido.component';
 
 @NgModule({
   declarations: [
     PerfilComponent,
     CategoriaComponent,
     UsuarioComponent,
-    ProductoComponent
+    ProductoComponent,
+    NuevoPedidoComponent,
+    ListaPedidoComponent
   ],
   imports: [
     CommonModule,

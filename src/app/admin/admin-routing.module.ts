@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CategoriaComponent } from './components/categoria/categoria.component';
+import { ListaPedidoComponent } from './components/pedido/lista-pedido/lista-pedido.component';
+import { NuevoPedidoComponent } from './components/pedido/nuevo-pedido/nuevo-pedido.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path: 'producto',
     component: ProductoComponent
+  },
+  {
+    path: 'pedido',
+    component: ListaPedidoComponent
+  },
+  {
+    path: 'pedido/nuevo',
+    component: NuevoPedidoComponent
   }
 ];
 
