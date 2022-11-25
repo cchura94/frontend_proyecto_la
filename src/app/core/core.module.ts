@@ -6,6 +6,8 @@ import { AuthInterceptor } from '../interceptor/auth.interceptor';
 import { UsuarioService } from './services/usuario.service';
 import { CategoriaService } from './services/categoria.service';
 import { ProductoService } from './services/producto.service';
+import { ClienteService } from './services/cliente.service';
+import { PedidoService } from './services/pedido.service';
 
 
 
@@ -23,7 +25,9 @@ import { ProductoService } from './services/producto.service';
     },
     UsuarioService,
     CategoriaService,
-    ProductoService
+    ProductoService,
+    ClienteService,
+    PedidoService
   ]
 })
 export class CoreModule { }
